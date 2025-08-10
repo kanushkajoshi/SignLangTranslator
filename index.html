@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sign Language Translator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Sign Language Translator</h1>
+        <div class="main-flex">
+            <div class="cartoon-panel">
+                <div id="output">Waiting for gesture...</div>
+                <img id="sign-gif" />
+            </div>
+            <div class="video-panel">
+                <video id="webcam" autoplay playsinline></video>
+            </div>
+        </div>
+        
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils/drawing_utils.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
